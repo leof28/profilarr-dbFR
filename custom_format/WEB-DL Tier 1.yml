@@ -1,0 +1,27 @@
+name: WEB-DL Tier 1
+description: Matches release groups who fall under WEB-DL Tier 1
+tags:
+- Release Group Tier
+- WEB-DL
+conditions:
+- name: WEB-DL
+  negate: false
+  required: true
+  source: web_dl
+  type: source
+- name: FLUX
+  negate: false
+  pattern: FLUX
+  required: false
+  type: release_group
+- name: NTb
+  negate: false
+  pattern: NTb
+  required: false
+  type: release_group
+- name: tier 1 fr
+  type: release_group
+  required: false
+  negate: false
+  pattern: RADARR - FR WEB Tier 01 Teams
+tests: []

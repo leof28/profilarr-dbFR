@@ -1,0 +1,19 @@
+name: Not Only French
+description: Matches releases that don't include an French language track. Dual audio
+  is NOT allowed.
+tags:
+- Language
+conditions:
+- exceptLanguage: true
+  language: french
+  name: Not French
+  negate: false
+  required: true
+  type: language
+- exceptLanguage: false
+  language: french
+  name: Includes French
+  negate: false
+  required: true
+  type: language
+tests: []
