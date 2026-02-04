@@ -1,0 +1,81 @@
+name: 10 bit hdlight
+pattern: \b(10bit)|HDLight|10bits|(10bits)|10 bit\b|HDR10
+description: ''
+tags: []
+tests:
+- expected: false
+  id: 1
+  input: 300 2007 MULTi VFF 1080p BluRay AC3 x265-Winks
+  lastRun: '2025-09-11T18:04:05.001995'
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: true
+- expected: true
+  id: 2
+  input: Avengers.Endgame.2019.CUSTOM.MULTI.IMAX.1080p.DSNP.WEBRIP.x265.10bit.HDR.AC3.5.1-NoTag
+  lastRun: '2025-09-11T18:04:05.001995'
+  matchSpan:
+    end: 68
+    start: 63
+  matchedContent: 10bit
+  matchedGroups:
+  - 10bit
+  - null
+  passes: true
+- expected: true
+  id: 3
+  input: Avengers Endgame (2019) MULTi VFF REPACK 1080p 10bits HDLight BluRay x265
+    HE-AAC 7.1 -QTZ
+  lastRun: '2025-09-11T18:04:05.001995'
+  matchSpan:
+    end: 52
+    start: 47
+  matchedContent: 10bit
+  matchedGroups:
+  - 10bit
+  - null
+  passes: true
+- expected: true
+  id: 4
+  input: Avengers Endgame (2019) MULTi VFF REPACK 1080p HDLight BluRay x265 HE-AAC
+    7.1 -QTZ
+  lastRun: '2025-09-11T18:04:05.001995'
+  matchSpan:
+    end: 54
+    start: 47
+  matchedContent: HDLight
+  matchedGroups:
+  - null
+  - null
+  passes: true
+- expected: true
+  id: 5
+  input: Avengers Endgame (2019) MULTi VFF REPACK 1080p 10 bit BluRay x265 HE-AAC
+    7.1 -QTZ
+  lastRun: '2025-09-11T18:04:05.001995'
+  matchSpan:
+    end: 53
+    start: 47
+  matchedContent: 10 bit
+  matchedGroups:
+  - null
+  - null
+  passes: true
+- expected: false
+  id: 6
+  input: Avengers Endgame (2019) MULTi VFF REPACK 1080p 10 x265 HE-AAC 7.1 -QTZ
+  lastRun: '2025-09-11T18:04:05.001995'
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: true
+- expected: false
+  id: 7
+  input: Avengers Endgame (2019) MULTi VFF REPACK 1080p 10 BluRay x265 HE-AAC 7.1
+    -bit
+  lastRun: '2025-09-11T18:04:05.001995'
+  matchSpan: null
+  matchedContent: null
+  matchedGroups: []
+  passes: true
