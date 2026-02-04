@@ -1,0 +1,47 @@
+name: 10bit HDLight
+description: ''
+tags: []
+conditions:
+- name: 10bit hdlight
+  negate: false
+  pattern: 10 bit hdlight
+  required: true
+  type: release_title
+tests:
+- conditionResults:
+  - matches: true
+    name: 10bit hdlight
+    negate: false
+    pattern: 10 bit hdlight
+    required: true
+    type: release_title
+  expected: true
+  id: 1
+  input: Avengers Endgame (2019) MULTi VFF REPACK 1080p 10bit HDLight BluRay x265
+    HE-AAC 7.1 -QTZ
+  lastRun: '2025-09-05T23:10:43.260704'
+  passes: true
+- conditionResults:
+  - matches: false
+    name: 10bit hdlight
+    negate: false
+    pattern: 10 bit hdlight
+    required: true
+    type: release_title
+  expected: false
+  id: 2
+  input: Avengers Endgame (2019) MULTi VFF REPACK 1080p  BluRay x265 HE-AAC 7.1 -QTZ
+  lastRun: '2025-09-05T23:10:43.260704'
+  passes: true
+- conditionResults:
+  - matches: true
+    name: 10bit hdlight
+    negate: false
+    pattern: 10 bit hdlight
+    required: true
+    type: release_title
+  expected: true
+  id: 3
+  input: Avengers.Endgame.2019.CUSTOM.MULTI.IMAX.1080p.DSNP.WEBRIP.x265.10bit.HDR.AC3.5.1-NoTag
+  lastRun: '2025-09-05T23:10:43.260704'
+  passes: true
