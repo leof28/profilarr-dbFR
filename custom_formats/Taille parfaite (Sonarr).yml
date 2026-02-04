@@ -1,0 +1,13 @@
+name: Taille parfaite (Sonarr)
+description: ''
+tags: []
+conditions:
+- maxSize: '10'
+  maxSizeUnit: GB
+  minSize: '4'
+  minSizeUnit: GB
+  name: Taille parfaite
+  negate: false
+  required: false
+  type: size
+tests: []

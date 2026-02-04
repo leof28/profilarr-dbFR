@@ -1,0 +1,13 @@
+name: Taille parfaite (Radarr)
+description: ''
+tags: []
+conditions:
+- maxSize: '48'
+  maxSizeUnit: GB
+  minSize: '16'
+  minSizeUnit: GB
+  name: Taille parfaite
+  negate: false
+  required: false
+  type: size
+tests: []
