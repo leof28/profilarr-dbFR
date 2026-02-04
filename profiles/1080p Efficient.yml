@@ -1,0 +1,283 @@
+name: 1080p Efficient
+description: Efficient Profile Beta Testing Radarr and Sonarr
+tags:
+- 1080p
+- Efficient Focused
+- Lossy Audio
+- h265
+- x265
+upgradesAllowed: true
+minCustomFormatScore: 350
+upgradeUntilScore: 5000
+minScoreIncrement: 100
+custom_formats:
+- name: 1080p WEB-DL HEVC Tier 3
+  score: 850
+- name: 1080p Balanced Tier 1
+  score: 700
+- name: 1080p Bluray HEVC Tier 0
+  score: 600
+- name: 1080p WEB-DL HEVC Tier 1
+  score: 600
+- name: 1080p WEB-DL HEVC Tier 2
+  score: 500
+- name: ATV
+  score: 500
+- name: h265
+  score: 500
+- name: h265 (Efficient)
+  score: 500
+- name: HDR
+  score: 500
+- name: HDR10
+  score: 500
+- name: HLG
+  score: 500
+- name: iT
+  score: 500
+- name: NF
+  score: 500
+- name: NOW
+  score: 500
+- name: PCOK
+  score: 500
+- name: x265
+  score: 500
+- name: x265 (Efficient)
+  score: 500
+- name: x265 (WEB)
+  score: 500
+- name: 1080p WEB-DL (h264)
+  score: 300
+- name: Dolby Atmos
+  score: 200
+- name: Dolby Digital +
+  score: 200
+- name: DTS
+  score: 200
+- name: DVD
+  score: 200
+- name: DVD Remux
+  score: 200
+- name: DTS-HD HRA
+  score: 150
+- name: PQ
+  score: 150
+- name: WEB-DL Tier 1
+  score: 150
+- name: Dolby Digital
+  score: 100
+- name: DS4K
+  score: 100
+- name: DTS-ES
+  score: 100
+- name: Opus
+  score: 100
+- name: WEB-DL Tier 2
+  score: 80
+- name: WEB-DL Tier 3
+  score: 60
+- name: WEB-DL Tier 4
+  score: 40
+- name: AMZN
+  score: 30
+- name: ATVP
+  score: 30
+- name: Dolby Vision
+  score: 30
+- name: DSNP
+  score: 30
+- name: HDR10+
+  score: 20
+- name: HMAX
+  score: 20
+- name: MAX
+  score: 20
+- name: WEB-DL Tier 5
+  score: 20
+- name: Repack3
+  score: 8
+- name: Repack2
+  score: 7
+- name: Repack1
+  score: 6
+- name: AAC
+  score: 0
+- name: BCORE
+  score: 0
+- name: HTSR
+  score: 0
+- name: HULU
+  score: 0
+- name: PMTP
+  score: 0
+- name: ROKU
+  score: 0
+- name: SHO
+  score: 0
+- name: STAN
+  score: 0
+- name: Banned WEB-DL (x265)
+  score: -1000
+- name: 10bit HDLight
+  score: -99999
+- name: 480p WEB-DL
+  score: -99999
+- name: 720p Balanced Tier 1
+  score: -99999
+- name: 720p Bluray
+  score: -99999
+- name: 720p Quality Tier 1
+  score: -99999
+- name: 720p Quality Tier 2
+  score: -99999
+- name: 720p Quality Tier 3
+  score: -99999
+- name: 720p Quality Tier 4
+  score: -99999
+- name: 720p Quality Tier 5
+  score: -99999
+- name: 720p WEB-DL
+  score: -99999
+- name: 720p WEBRip
+  score: -99999
+- name: AV1
+  score: -99999
+- name: B&W
+  score: -99999
+- name: Banned Groups
+  score: -99999
+- name: Banned Groups (Title)
+  score: -99999
+- name: Banned WEBRip (Efficient)
+  score: -99999
+- name: Dolby Vision (Without Fallback)
+  score: -99999
+- name: Full Disc
+  score: -99999
+- name: Lossless Audio
+  score: -99999
+- name: Not French
+  score: -99999
+- name: Remux
+  score: -99999
+- name: SD Quality Tier 1
+  score: -99999
+- name: SD Quality Tier 2
+  score: -99999
+- name: TrueHD
+  score: -99999
+- name: UHD Bluray
+  score: -99999
+- name: UHD Bluray (Missing)
+  score: -99999
+- name: Upscaled
+  score: -99999
+- name: VP9
+  score: -99999
+- name: VVC
+  score: -99999
+custom_formats_radarr:
+- name: 1080p Efficient Bluray Tier 1 (Radarr)
+  score: 920
+- name: 1080p Efficient Bluray Tier 2 (Radarr)
+  score: 915
+- name: 1080p Efficient Bluray Tier 3 (Radarr)
+  score: 910
+- name: 1080p Efficient Bluray Tier 4 (Radarr)
+  score: 905
+- name: 1080p Efficient Bluray Tier 5 (Radarr)
+  score: 900
+- name: 1080p Efficient WEB Tier 1 (Radarr)
+  score: 815
+- name: 1080p Efficient WEB Tier 2 (Radarr)
+  score: 810
+- name: 1080p Efficient WEB Tier 3 (Radarr)
+  score: 805
+- name: 1080p Efficient WEB Tier 4 (Radarr)
+  score: 800
+- name: CRIT
+  score: 500
+- name: Taille parfaite (Radarr)
+  score: 300
+- name: Special Edition
+  score: 150
+- name: MA
+  score: 50
+- name: SD Golden Popcorn
+  score: 40
+- name: 3D
+  score: -99999
+- name: 720p Golden Popcorn
+  score: -99999
+- name: Extras
+  score: -99999
+- name: Full Disc (Quality Match)
+  score: -99999
+- name: Remux (Quality Match)
+  score: -99999
+- name: Sing Along
+  score: -99999
+custom_formats_sonarr:
+- name: 1080p Efficient Bluray Tier 1 (Sonarr)
+  score: 920
+- name: 1080p Efficient Bluray Tier 2 (Sonarr)
+  score: 915
+- name: 1080p Efficient Bluray Tier 3 (Sonarr)
+  score: 910
+- name: 1080p Efficient Bluray Tier 4 (Sonarr)
+  score: 905
+- name: 1080p Efficient Bluray Tier 5 (Sonarr)
+  score: 900
+- name: 1080p Efficient WEB Tier 1 (Sonarr)
+  score: 815
+- name: 1080p Efficient WEB Tier 2 (Sonarr)
+  score: 810
+- name: 1080p Efficient WEB Tier 3 (Sonarr)
+  score: 805
+- name: 1080p Efficient WEB Tier 4 (Sonarr)
+  score: 800
+- name: 1080p Efficient Bluray Tier 6 (Sonarr)
+  score: 795
+- name: 1080p Efficient WEB Tier 5 (Sonarr)
+  score: 790
+- name: Taille parfaite (Sonarr)
+  score: 120
+- name: Season Pack
+  score: 100
+- name: Remux (Source)
+  score: -999999
+- name: TV Extras
+  score: -999999
+qualities:
+- id: -1
+  name: Efficient Capable
+  description: Balanced Capable releases. Typically WEB-DL would be the overwhelming
+    majority of releases, but there are occasional streaming optimised encodes that
+    should be preferred.
+  qualities:
+  - id: 10
+    name: Bluray-1080p
+  - id: 9
+    name: WEBDL-1080p
+  - id: 11
+    name: WEBRip-1080p
+- id: 12
+  name: HDTV-1080p
+- id: -2
+  name: 720p Fallback
+  description: Fallback to 720p when 1080p cannot be found.
+  qualities:
+  - id: 13
+    name: Bluray-720p
+  - id: 14
+    name: WEBDL-720p
+  - id: 15
+    name: WEBRip-720p
+upgrade_until:
+  id: -1
+  name: Efficient Capable
+  description: Balanced Capable releases. Typically WEB-DL would be the overwhelming
+    majority of releases, but there are occasional streaming optimised encodes that
+    should be preferred.
+language: must_french
