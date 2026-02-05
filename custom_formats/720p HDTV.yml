@@ -1,0 +1,21 @@
+name: 720p HDTV
+description: Matches 720p HDTV.
+tags:
+- Source
+conditions:
+- name: 720p
+  negate: false
+  required: true
+  resolution: 720p
+  type: resolution
+- name: HDTV
+  negate: false
+  required: true
+  source: television
+  type: source
+- name: Sourceless Groups
+  type: release_title
+  required: true
+  negate: true
+  pattern: Sourceless Groups
+tests: []

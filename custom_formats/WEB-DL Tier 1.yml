@@ -19,9 +19,9 @@ conditions:
   pattern: NTb
   required: false
   type: release_group
-- name: tier 1 fr
+- name: TheFarm
   type: release_group
   required: false
   negate: false
-  pattern: RADARR - FR WEB Tier 01 Teams
+  pattern: TheFarm
 tests: []

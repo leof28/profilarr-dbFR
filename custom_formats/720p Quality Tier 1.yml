@@ -11,19 +11,44 @@ conditions:
   required: true
   resolution: 720p
   type: resolution
-- name: Not WEB-DL
+- name: Not Remux
   negate: true
+  pattern: Remux
   required: true
-  source: web_dl
+  type: release_title
+- name: Bluray
+  negate: false
+  required: false
+  source: bluray
+  type: source
+- name: WEBRip
+  negate: false
+  required: false
+  source: webrip
   type: source
 - name: DON
   negate: false
   pattern: DON
   required: false
   type: release_group
-- name: EbP
+- name: REBORN
+  type: release_group
+  required: false
   negate: false
-  pattern: EbP
+  pattern: REBORN
+- name: SoLaR
+  type: release_group
+  required: false
+  negate: false
+  pattern: SoLaR
+- name: TeamSyndicate
+  negate: false
+  pattern: TeamSyndicate
+  required: false
+  type: release_group
+- name: ZoroSenpai
+  negate: false
+  pattern: ZoroSenpai
   required: false
   type: release_group
 tests: []
