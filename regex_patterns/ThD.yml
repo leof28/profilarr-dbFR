@@ -1,5 +1,5 @@
-name: SWTYBLZ
-pattern: \b(SWTYBLZ)\b
+name: ThD
+pattern: (?<=^|[\s.-])ThD\b
 description: ''
 tags:
 - Release Group

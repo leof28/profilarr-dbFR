@@ -1,5 +1,5 @@
-name: SWTYBLZ
-pattern: \b(SWTYBLZ)\b
+name: Slappy
+pattern: (?<=^|[\s.-])Slappy\b
 description: ''
 tags:
 - Release Group
