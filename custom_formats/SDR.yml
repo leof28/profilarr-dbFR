@@ -1,8 +1,7 @@
 name: SDR
-description: Attempts to match Standard Dynamic Range by negating any known HDR formats
-tags:
-- Colour Grade
-- HDR
+description: Ban 2160p WEB-DL Releases without Dolby Vision or HDR Formats. Movies
+  Anywhere is excluded due to the high bitrate.
+tags: []
 conditions:
 - name: 2160p
   negate: false
@@ -14,34 +13,14 @@ conditions:
   required: true
   source: web_dl
   type: source
-- name: Not PQ
-  type: release_title
-  required: true
+- name: DV HDR
   negate: true
-  pattern: PQ
-- name: Not HLG
-  type: release_title
-  required: true
-  negate: true
-  pattern: HLG
-- name: Not HDR
-  negate: true
-  pattern: HDR
+  pattern: Basic HDR Formats
   required: true
   type: release_title
-- name: Not HDR10
+- name: Movies Anywhere
   negate: true
-  pattern: HDR10
-  required: true
-  type: release_title
-- name: Not HDR10+
-  negate: true
-  pattern: HDR10+
-  required: true
-  type: release_title
-- name: Not Dolby Vision
-  negate: true
-  pattern: Dolby Vision
+  pattern: Movies Anywhere
   required: true
   type: release_title
 tests: []

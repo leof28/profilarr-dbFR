@@ -44,9 +44,4 @@ conditions:
   pattern: TRiToN
   required: false
   type: release_group
-- name: ZoroSenpai
-  negate: false
-  pattern: ZoroSenpai
-  required: false
-  type: release_group
 tests: []
