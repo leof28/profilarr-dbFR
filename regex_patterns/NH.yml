@@ -1,7 +1,7 @@
-name: QOQ
-pattern: ^(QOQ)$
+name: NH
+pattern: (?<=^|[\s.-])NH\b
 description: ''
 tags:
 - Release Group
-- WEB-DL
+- Anime
 tests: []

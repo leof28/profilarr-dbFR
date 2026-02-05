@@ -1,7 +1,7 @@
-name: QOQ
-pattern: ^(QOQ)$
+name: NiP
+pattern: (?<=^|[\s.-])NiP\b
 description: ''
 tags:
 - Release Group
-- WEB-DL
+- Bluray
 tests: []
