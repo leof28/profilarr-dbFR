@@ -1,5 +1,5 @@
-name: BHDStudio
-pattern: ^(BHDStudio)$
+name: bluegreeen
+pattern: (?<=^|[\s.-])bluegreeen\b
 description: ''
 tags:
 - Release Group

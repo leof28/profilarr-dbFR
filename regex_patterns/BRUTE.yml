@@ -1,5 +1,5 @@
-name: BHDStudio
-pattern: ^(BHDStudio)$
+name: BRUTE
+pattern: (?<=^|[\s.-])BRUTE\b
 description: ''
 tags:
 - Release Group

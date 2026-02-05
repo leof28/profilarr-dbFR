@@ -1,8 +1,9 @@
-name: Apple TV+
-pattern: \b(ATVP|ATV|APTV|Apple TV\+)\s*\b
-description: Apple TV+ is an American subscription OTT streaming service owned and
-  operated by Apple Inc. Launched on November 1, 2019, it offers a selection of original
-  production film and television series called Apple Originals.
+name: BBC iPlayer
+pattern: \b(iP)\b
+description: 'BBC iPlayer is a video on demand service from the BBC. The service is
+  available over-the-top on a wide range of devices, including mobile phones and tablets,
+  personal computers and smart televisions. iPlayer services delivered to UK-based
+  viewers are free from commercial advertising. '
 tags:
 - Streaming Service
 - WEB-DL

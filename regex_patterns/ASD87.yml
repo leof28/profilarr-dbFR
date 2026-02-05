@@ -1,5 +1,5 @@
-name: BHDStudio
-pattern: ^(BHDStudio)$
+name: ASD87
+pattern: (?<=^|[\s.-])ASD87\b
 description: ''
 tags:
 - Release Group

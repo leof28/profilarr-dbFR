@@ -1,7 +1,7 @@
-name: BHDStudio
-pattern: ^(BHDStudio)$
+name: CBFM
+pattern: (?<=^|[\s.-])CBFM\b
 description: ''
 tags:
 - Release Group
-- Bluray
+- HDTV
 tests: []
