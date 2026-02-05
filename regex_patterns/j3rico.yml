@@ -1,5 +1,5 @@
-name: hallowed
-pattern: ^(hallowed)$
+name: j3rico
+pattern: (?<=^|[\s.-])j3rico\b
 description: ''
 tags:
 - Release Group

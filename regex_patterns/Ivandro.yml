@@ -1,5 +1,5 @@
-name: hallowed
-pattern: ^(hallowed)$
+name: Ivandro
+pattern: (?<=^|[\s.-])Ivandro\b
 description: ''
 tags:
 - Release Group

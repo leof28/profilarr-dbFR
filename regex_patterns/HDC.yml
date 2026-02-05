@@ -1,7 +1,7 @@
-name: iVy
-pattern: (?<=^|[\s.-])iVy\b
+name: HDC
+pattern: (?<=^|[\s.-])HDC\b
 description: ''
 tags:
 - Release Group
-- Banned
+- Bluray
 tests: []
