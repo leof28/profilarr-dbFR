@@ -1,9 +1,10 @@
-name: 1080p Balanced Tier 1
-description: Matches release groups who fall under 1080p Balanced Tier 1
+name: 1080p Compact TV Bluray Tier 1
+description: Matches release groups who fall under 1080p Compact TV Bluray Tier 1
 tags:
 - Release Group Tier
 - 1080p
-- Balanced
+- Compact
+- TV
 conditions:
 - name: 1080p
   negate: false
@@ -15,9 +16,29 @@ conditions:
   required: true
   source: bluray
   type: source
-- name: hallowed
+- name: x265
   negate: false
-  pattern: hallowed
+  pattern: x265 (Efficient)
+  required: true
+  type: release_title
+- name: iVy
+  negate: false
+  pattern: iVy
+  required: false
+  type: release_group
+- name: KONTRAST
+  negate: false
+  pattern: KONTRAST
+  required: false
+  type: release_group
+- name: PHOCiS
+  negate: false
+  pattern: PHOCiS
+  required: false
+  type: release_group
+- name: YAWNiX
+  negate: false
+  pattern: YAWNiX
   required: false
   type: release_group
 tests:

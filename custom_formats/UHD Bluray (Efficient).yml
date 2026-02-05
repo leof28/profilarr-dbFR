@@ -1,4 +1,4 @@
-name: UHD Bluray
+name: UHD Bluray (Efficient)
 description: UHD Blu-ray is a digital optical disc format released in 2016. It stores
   66GB on triple-layer discs or 100GB on quad-layer discs, compared to standard Blu-ray's
   25GB/50GB capacity. The format delivers 3840x2160 (4K) resolution video using HEVC
@@ -18,7 +18,7 @@ conditions:
   type: resolution
 - name: UHD Bluray
   negate: false
-  pattern: UHD Bluray
+  pattern: UHD Bluray (Efficient)
   required: true
   type: release_title
 - name: HDR
@@ -26,11 +26,6 @@ conditions:
   pattern: Basic HDR Formats
   required: true
   type: release_title
-- name: Release Groups
-  negate: false
-  pattern: UHD Bluray Release Groups
-  required: true
-  type: release_group
 tests:
 - conditionResults:
   - matches: false

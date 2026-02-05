@@ -1,9 +1,11 @@
-name: 1080p Balanced Tier 1
-description: Matches release groups who fall under 1080p Balanced Tier 1
+name: 1080p Compact Movie Bluray Tier 2
+description: Matches release groups who fall under 1080p Compact Movie Bluray Tier
+  2
 tags:
 - Release Group Tier
 - 1080p
-- Balanced
+- Compact
+- Movie
 conditions:
 - name: 1080p
   negate: false
@@ -15,9 +17,24 @@ conditions:
   required: true
   source: bluray
   type: source
-- name: hallowed
+- name: x265
   negate: false
-  pattern: hallowed
+  pattern: x265 (Efficient)
+  required: true
+  type: release_title
+- name: dkore
+  negate: false
+  pattern: dkore
+  required: false
+  type: release_group
+- name: GRiMM
+  negate: false
+  pattern: GRiMM
+  required: false
+  type: release_group
+- name: TimeDistortion
+  negate: false
+  pattern: TimeDistortion
   required: false
   type: release_group
 tests:

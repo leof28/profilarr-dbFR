@@ -1,9 +1,11 @@
-name: 1080p Balanced Tier 1
-description: Matches release groups who fall under 1080p Balanced Tier 1
+name: 1080p Bluray HEVC Tier 1
+description: Matches release groups who fall under 1080p Efficient Bluray Tier 0
 tags:
 - Release Group Tier
 - 1080p
-- Balanced
+- HEVC
+- Movie
+- TV
 conditions:
 - name: 1080p
   negate: false
@@ -15,10 +17,15 @@ conditions:
   required: true
   source: bluray
   type: source
-- name: hallowed
+- name: x265
   negate: false
-  pattern: hallowed
-  required: false
+  pattern: x265 (Efficient)
+  required: true
+  type: release_title
+- name: HONE
+  negate: false
+  pattern: HONE
+  required: true
   type: release_group
 tests:
 - conditionResults:

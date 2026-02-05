@@ -1,23 +1,59 @@
-name: 1080p Balanced Tier 1
-description: Matches release groups who fall under 1080p Balanced Tier 1
+name: 1080p Compact Movie WEB Tier 2
+description: Matches release groups who fall under 1080p Compact Movie WEB Tier 2
 tags:
 - Release Group Tier
 - 1080p
-- Balanced
+- Compact
+- Movie
 conditions:
 - name: 1080p
   negate: false
   required: true
   resolution: 1080p
   type: resolution
-- name: Bluray
+- name: x265
   negate: false
+  pattern: x265 (Efficient)
   required: true
-  source: bluray
-  type: source
-- name: hallowed
+  type: release_title
+- name: Not HONE
+  type: release_title
+  required: true
+  negate: true
+  pattern: HONE
+- name: WEB-DL
   negate: false
-  pattern: hallowed
+  required: false
+  source: web_dl
+  type: source
+- name: WEBRip
+  negate: false
+  required: false
+  source: webrip
+  type: source
+- name: DarQ
+  negate: false
+  pattern: DarQ
+  required: false
+  type: release_group
+- name: dkore
+  negate: false
+  pattern: dkore
+  required: false
+  type: release_group
+- name: LSt
+  negate: false
+  pattern: LSt
+  required: false
+  type: release_group
+- name: SQS
+  negate: false
+  pattern: SQS
+  required: false
+  type: release_group
+- name: TimeDistortion
+  negate: false
+  pattern: TimeDistortion
   required: false
   type: release_group
 tests:

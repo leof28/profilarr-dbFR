@@ -1,7 +1,6 @@
-name: 1080p Bluray
-description: Matches 1080p Blurays that are NOT remuxes
-tags:
-- Source
+name: Vialle Bluray
+description: ''
+tags: []
 conditions:
 - name: 1080p
   negate: false
@@ -13,9 +12,14 @@ conditions:
   required: true
   source: bluray
   type: source
-- name: Not Remux
-  type: release_title
+- name: Vialle
+  negate: false
+  pattern: Vialle
   required: true
+  type: release_title
+- name: Release Group
   negate: true
-  pattern: Remux
+  pattern: Vialle
+  required: true
+  type: release_group
 tests: []
