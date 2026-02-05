@@ -34,6 +34,11 @@ conditions:
   pattern: BiTOR
   required: false
   type: release_group
+- name: BLASPHEMY
+  negate: false
+  pattern: BLASPHEMY
+  required: false
+  type: release_group
 - name: BOLS
   negate: false
   pattern: BOLS
@@ -64,6 +69,21 @@ conditions:
   pattern: DepraveD
   required: false
   type: release_group
+- name: DeViSiVE
+  negate: false
+  pattern: DeViSiVE
+  required: false
+  type: release_group
+- name: DRX
+  negate: false
+  pattern: DRX
+  required: false
+  type: release_group
+- name: E
+  type: release_group
+  required: false
+  negate: false
+  pattern: E
 - name: FGT
   negate: false
   pattern: FGT
@@ -77,6 +97,11 @@ conditions:
 - name: HDS
   negate: false
   pattern: HDS
+  required: false
+  type: release_group
+- name: iVy
+  negate: false
+  pattern: iVy
   required: false
   type: release_group
 - name: jennaortegaUHD
@@ -179,6 +204,16 @@ conditions:
   pattern: TvR
   required: false
   type: release_group
+- name: UnKn0wn
+  negate: false
+  pattern: UnKn0wn
+  required: false
+  type: release_group
+- name: VD0N
+  negate: false
+  pattern: VD0N
+  required: false
+  type: release_group
 - name: VECTOR
   negate: false
   pattern: VECTOR
@@ -187,11 +222,6 @@ conditions:
 - name: VisionXpert
   negate: false
   pattern: VisionXpert
-  required: false
-  type: release_group
-- name: WiKi
-  negate: false
-  pattern: WiKi
   required: false
   type: release_group
 - name: x0r
@@ -209,9 +239,4 @@ conditions:
   pattern: YTS
   required: false
   type: release_group
-- name: low quality fr
-  type: release_group
-  required: false
-  negate: false
-  pattern: FR LQ Teams
 tests: []

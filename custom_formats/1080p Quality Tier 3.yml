@@ -11,11 +11,26 @@ conditions:
   required: true
   resolution: 1080p
   type: resolution
-- name: Not WEB-DL
-  type: source
-  required: true
+- name: Not Remux
   negate: true
-  source: web_dl
+  pattern: Remux
+  required: true
+  type: release_title
+- name: Bluray
+  negate: false
+  required: false
+  source: bluray
+  type: source
+- name: WEBRip
+  negate: false
+  required: false
+  source: webrip
+  type: source
+- name: BV
+  negate: false
+  pattern: BV
+  required: false
+  type: release_group
 - name: CRiSC
   negate: false
   pattern: CRiSC
@@ -46,9 +61,9 @@ conditions:
   pattern: iFT
   required: false
   type: release_group
-- name: SA89
+- name: SbR
   negate: false
-  pattern: SA89
+  pattern: SbR
   required: false
   type: release_group
 - name: WMING

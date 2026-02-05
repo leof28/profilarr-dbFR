@@ -15,19 +15,19 @@ conditions:
   required: true
   source: bluray
   type: source
+- name: Not Remux
+  negate: true
+  pattern: Remux
+  required: true
+  type: release_title
 - name: 4KDVS
   negate: false
   pattern: 4KDVS
   required: false
   type: release_group
-- name: BlzT
+- name: b0mbardiers
   negate: false
-  pattern: BlzT
-  required: false
-  type: release_group
-- name: BSTD
-  negate: false
-  pattern: BSTD
+  pattern: b0mbardiers
   required: false
   type: release_group
 - name: DEFLATE
@@ -35,24 +35,39 @@ conditions:
   pattern: DEFLATE
   required: false
   type: release_group
+- name: DEPTH
+  negate: false
+  pattern: DEPTH
+  required: false
+  type: release_group
+- name: j3rico
+  negate: false
+  pattern: j3rico
+  required: false
+  type: release_group
 - name: JustWatch
   negate: false
   pattern: JustWatch
   required: false
   type: release_group
-- name: SURCODE
+- name: ORBiT
   type: release_group
   required: false
   negate: false
-  pattern: SURCODE
-- name: TnP
+  pattern: ORBiT
+- name: SURCODE
   negate: false
-  pattern: TnP
+  pattern: SURCODE
   required: false
   type: release_group
 - name: WATCHABLE
   negate: false
   pattern: WATCHABLE
+  required: false
+  type: release_group
+- name: WiKi
+  negate: false
+  pattern: WiKi
   required: false
   type: release_group
 tests: []

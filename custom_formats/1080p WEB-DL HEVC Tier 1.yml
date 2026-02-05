@@ -20,6 +20,11 @@ conditions:
   pattern: HEVC
   required: true
   type: release_title
+- name: Not Weasley
+  type: release_title
+  required: true
+  negate: true
+  pattern: Weasley
 - name: BYNDR
   negate: false
   pattern: BYNDR
@@ -75,9 +80,4 @@ conditions:
   pattern: TEPES
   required: false
   type: release_group
-- name: fr tier 1
-  type: release_group
-  required: false
-  negate: false
-  pattern: RADARR - FR WEB Tier 01 Teams
 tests: []

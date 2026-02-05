@@ -11,10 +11,20 @@ conditions:
   required: true
   resolution: 1080p
   type: resolution
-- name: Not WEB-DL
+- name: Not Remux
   negate: true
+  pattern: Remux
   required: true
-  source: web_dl
+  type: release_title
+- name: Bluray
+  negate: false
+  required: false
+  source: bluray
+  type: source
+- name: WEBRip
+  negate: false
+  required: false
+  source: webrip
   type: source
 - name: c0kE
   negate: false
@@ -24,6 +34,16 @@ conditions:
 - name: CtrlHD
   negate: false
   pattern: CtrlHD
+  required: false
+  type: release_group
+- name: D-Z0N3
+  negate: false
+  pattern: D-Z0N3
+  required: false
+  type: release_group
+- name: EbP
+  negate: false
+  pattern: EbP
   required: false
   type: release_group
 - name: Geek
@@ -36,6 +56,11 @@ conditions:
   pattern: HiFi
   required: false
   type: release_group
+- name: LoRD
+  negate: false
+  pattern: LoRD
+  required: false
+  type: release_group
 - name: TayTo
   negate: false
   pattern: TayTo
@@ -46,19 +71,9 @@ conditions:
   pattern: VietHD
   required: false
   type: release_group
-- name: ZoroSenpai
-  negate: false
-  pattern: ZoroSenpai
-  required: false
-  type: release_group
 - name: ZQ
   negate: false
   pattern: ZQ
   required: false
   type: release_group
-- name: fr tier 2 team
-  type: release_group
-  required: false
-  negate: false
-  pattern: RADARR - FR WEB Tier 02 Teams
 tests: []

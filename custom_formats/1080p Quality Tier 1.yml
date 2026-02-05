@@ -11,29 +11,54 @@ conditions:
   required: true
   resolution: 1080p
   type: resolution
-- name: Not WEB-DL
+- name: Not Remux
   negate: true
+  pattern: Remux
   required: true
-  source: web_dl
+  type: release_title
+- name: Bluray
+  negate: false
+  required: false
+  source: bluray
   type: source
+- name: WEBRip
+  negate: false
+  required: false
+  source: webrip
+  type: source
+- name: coffee
+  type: release_group
+  required: false
+  negate: false
+  pattern: coffee
 - name: DON
   negate: false
   pattern: DON
   required: false
   type: release_group
-- name: D-Z0N3
+- name: TeamSyndicate
   negate: false
-  pattern: D-Z0N3
+  pattern: TeamSyndicate
   required: false
   type: release_group
-- name: EbP
+- name: REBORN
   negate: false
-  pattern: EbP
+  pattern: REBORN
   required: false
   type: release_group
-- name: FR WEB tier 1 team
-  type: release_group
-  required: false
+- name: SA89
   negate: false
-  pattern: RADARR - FR WEB Tier 01 Teams
+  pattern: SA89
+  required: false
+  type: release_group
+- name: SoLaR
+  negate: false
+  pattern: SoLaR
+  required: false
+  type: release_group
+- name: ZoroSenpai
+  negate: false
+  pattern: ZoroSenpai
+  required: false
+  type: release_group
 tests: []
